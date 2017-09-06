@@ -1,14 +1,4 @@
-# regex-named-groups
-
-## Install
-```sh
-npm install @jonstuebe/regex-named-groups --save
-```
-
-## Usage
-
-```javascript
-const regexNamedGroups = require("@jonstuebe/regex-named-groups");
+const regexNamedGroups = require("../lib/index");
 
 const regex = /^([A-Z_]*?):[\ ]*?([^\ ]*?)$/gm;
 const text = `
@@ -18,4 +8,5 @@ DEBUG_MODE:       false
 `;
 
 const matches = regexNamedGroups(text, regex, ["key","value"]);
-```
+
+console.log(matches);
