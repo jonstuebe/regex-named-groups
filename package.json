@@ -1,5 +1,5 @@
 {
-  "name": "regex-named-groups",
+  "name": "@jonstuebe/regex-named-groups",
   "version": "0.1.0",
   "description": "",
   "main": "lib/index.js",
